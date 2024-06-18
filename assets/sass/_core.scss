@@ -64,6 +64,16 @@ body {
 	background-color: $color-tan;
 	color: $color_secondary;
 }
+body.page {
+	li.home {
+		display: none;
+	}
+}
+body.home {
+	li.home {
+		display: inline-block;
+	}
+}
 .wrapper {
   position: relative;
 	max-width: 1200px;
