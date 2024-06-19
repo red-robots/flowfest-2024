@@ -31,9 +31,7 @@ $flexClass = ($imgURL) ? 'half':'full';
     
       <div class="text">
         <h2 class="title"><?php echo $post->post_title ?></h2>
-        <?php if ( $content ) { ?>
-        <div class="description"><?php echo $content ?></div>
-        <?php } ?>
+        
 
         <?php if ( $time_only || $other_info ) { ?>
         <div class="other-info">
@@ -45,6 +43,12 @@ $flexClass = ($imgURL) ? 'half':'full';
           <?php } ?>
         </div>
         <?php } ?>
+
+        <?php if ( $content ) { ?>
+        <div class="description"><?php echo $content ?></div>
+        <?php } ?>
+
+        
       </div>
 
       <?php if ($imgURL) { ?>

@@ -183,8 +183,8 @@ nav.main-navigation {
   ul.menu > li > a {
     display: block;
     text-decoration: none;
-    padding: 20px 20px;
-    color: $color_secondary;
+    padding: 18px 20px;
+    color: $color-brown;
     font-family: $letter-magic;
     font-size: 15px;
     line-height: 1.3;
@@ -276,12 +276,12 @@ nav.main-navigation {
   ul.menu ul a {
     display: block;
     text-decoration: none;
-    color: $color-tan;
+    color: $color-brown;
     font-size: 15px;
     line-height: 1.2;
     padding: 10px 15px;
     @include tab {
-      color: #fbf1ea;
+      // color: #fbf1ea;
     }
     span b {
     	font-weight: normal;
@@ -320,7 +320,7 @@ nav.main-navigation.full-width-dropdown {
         width: calc(100% - 30px);
         opacity: 0;
         height: 2px;
-        background: #fbf1ea;
+        background: $color-brown;
         position: absolute;
         left: 15px;
         bottom: 6px;
@@ -394,7 +394,7 @@ footer.site-footer {
   span.bar, span.bar:before, span.bar:after {
     position: absolute;
     height: 2px;
-    background: $color-gold;
+    background: $color-brown;
     transition: all ease .2s;
   }
   span.bar:before, span.bar:after {
@@ -792,11 +792,12 @@ section.pagetitle {
     width: 120px;
     height: 120px;
     position: absolute;
-    top: -40px;
-    left: 28px;
+    top: 10px;
+    left: 58px;
     z-index: 5;
     @include tab {
       left: 38px;
+      top: -40px;
     }
 		a {
       display: flex;
@@ -1394,7 +1395,7 @@ body.popup-open {
     background: $color-gold;
     box-shadow: 0 4px 14px rgba(0,0,0,0.2);
     position: relative;
-    color: $color-tan;
+    color: #000;
     @include animateThis(1s);
     @include animateEffect('fadeIn');
     .flex-wrap {
@@ -1439,9 +1440,13 @@ body.popup-open {
     }
     .other-info {
       margin-top: 30px;
-      border-left: 1px solid #FFF;
+      border-left: 1px solid #000;
       padding-left: 15px;
       line-height: 1.3;
+      margin-bottom: 30px;
+      .time {
+      	margin-bottom: 20px;
+      }
     }
 
     &.activity {
@@ -1508,7 +1513,7 @@ body.popup-open {
       display: block;
       width: 100%;
       height: 2px;
-      background: rgba(255,255,255,.5);
+      background: rgba(#000, .9);
       position: absolute;
       top: 12px;
       left: 0;
@@ -2072,7 +2077,7 @@ section.faqs {
   .question {
     display: block;
     cursor: pointer;
-    font-family: $letter-magic;
+    font-family: $font-brandon-medium;
     font-size: 2em;
     font-weight: normal;
     line-height: 1.2;
