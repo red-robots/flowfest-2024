@@ -61,7 +61,11 @@ $CS = get_field('coming_soon');
           </div>
 
           <div class="activities">
-            <?php foreach ($activities as $a) { 
+            <?php 
+            // echo '<pre>';
+            // print_r($activities);
+
+            foreach ($activities as $a) { 
               $time = (isset($a['time']) && $a['time']) ? $a['time'] : '';
               $custom_title = $a['custom_title'];
               $item = $a['activity'];
