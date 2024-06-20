@@ -19,6 +19,10 @@ $flexClass = ($img) ? 'half':'full';
       <div class="text">
         <h2 class="title"><?php echo $post->post_title; ?></h2>
 
+        <?php 
+          // echo '<pre>';
+          // print_r($img);
+         ?>
         
 
         <?php if ( $time_only || $other_info ) { ?>
@@ -35,13 +39,14 @@ $flexClass = ($img) ? 'half':'full';
         <?php if ( $content ) { ?>
         <div class="description"><?php echo $content ?></div>
         <?php } ?>
-        
+
       </div>
 
       <?php if ($img) { ?>
       <div class="photo">
-        <figure <?php echo $image_style ?>>
-          <img src="<?php echo THEMEURI ?>images/image-helper.png" alt="">
+        <figure <?php //echo $image_style ?>>
+          <img src="<?php echo $img['sizes']['big-square']; ?>" alt="">
+          <!-- <img src="<?php echo THEMEURI ?>images/image-helper.png" alt=""> -->
         </figure>
       </div>
       <?php } ?>

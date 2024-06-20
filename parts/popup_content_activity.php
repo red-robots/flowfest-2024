@@ -32,6 +32,10 @@ $flexClass = ($imgURL) ? 'half':'full';
       <div class="text">
         <h2 class="title"><?php echo $post->post_title ?></h2>
         
+        <?php 
+          // echo '<pre>';
+          // print_r($img);
+         ?>
 
         <?php if ( $time_only || $other_info ) { ?>
         <div class="other-info">
@@ -48,13 +52,14 @@ $flexClass = ($imgURL) ? 'half':'full';
         <div class="description"><?php echo $content ?></div>
         <?php } ?>
 
-        
+
       </div>
 
       <?php if ($imgURL) { ?>
       <div class="photo">
-        <figure <?php echo $image_style ?>>
-          <img src="<?php echo THEMEURI ?>images/image-helper.png" alt="">
+        <figure <?php //echo $image_style ?>>
+          <img src="<?php echo $img['sizes']['big-square']; ?>" alt="">
+          <!-- <img src="<?php echo THEMEURI ?>images/image-helper.png" alt=""> -->
         </figure>
       </div>
       <?php } ?>

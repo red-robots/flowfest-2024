@@ -14,6 +14,11 @@
  * @return array
  */
 define('THEMEURI',get_template_directory_uri() . '/');
+
+
+add_image_size('big-square', 500, 500, array('center','center'));
+
+
 function exclude_post_types_banner() {
     $post_types = array('race','dining');
     return $post_types;
