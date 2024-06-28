@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
     adjustElements();
   });
   function adjustElements() {
-    if( $(window).width() < 768 ) {
+    if( $(window).width() < 1140 ) {
       $('.desktop-navigation .primary-menu-wrap').appendTo('.mobile-navigation');
       $('.banner-top-text .reg-button').prependTo('.home-content');
     } else {
@@ -59,7 +59,7 @@ jQuery(document).ready(function ($) {
     changeParentLinkMobile();
   });
   function changeParentLinkMobile() {
-    if( $(window).width() < 768 ) {
+    if( $(window).width() < 1140 ) {
       /* Remove parent link on Mobile View for menu with dropdown */
       $('#primary-menu > li.menu-item-has-children > a').each(function(){
         $(this).attr('href','javascript:void(0)').addClass('mobile-parent-link');

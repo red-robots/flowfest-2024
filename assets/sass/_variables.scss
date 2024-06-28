@@ -77,15 +77,15 @@ $font-brandon-medium-italic: 'Brandon Medium Italic';
 $letter-magic: 'Letter Magic', sans-serif;
 $font_secondary: 'Lato', sans-serif;
 
-$xswidth: 480px;
-$tabwidth: 767px;
-$midwidth: 900px;
-$deskwidth: 1200px;
+$xswidth: 782px;
+$tabwidth: 1140px;
+// $midwidth: 900px;
+// $deskwidth: 1200px;
 
 @mixin xs { @media (min-width: $xswidth) { @content; } }
 @mixin tab { @media (min-width: $tabwidth) { @content; } }
-@mixin mid { @media (min-width: $midwidth) { @content; } }
-@mixin desk {  @media (min-width: $deskwidth) { @content; } }
+// @mixin mid { @media (min-width: $midwidth) { @content; } }
+// @mixin desk {  @media (min-width: $deskwidth) { @content; } }
 
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {

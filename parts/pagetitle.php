@@ -10,5 +10,9 @@ $register_button_target = (isset($register['target']) && $register['target']) ? 
  		<a href="<?php echo $register_button_link; ?>" target="<?php echo $register_button_target; ?>"><span><?php echo $register_button_text; ?></span></a>
  	</div>
   <?php } ?>
- 	<h1 class="page-title"><?php the_title(); ?></h1>
+  <?php if( !is_front_page() ) { ?>
+ 	<h1 class="page-title">
+ 		 <?php the_title(); ?>
+ 	</h1>
+ <?php } ?>
 </section>
