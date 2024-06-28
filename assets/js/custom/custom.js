@@ -34,6 +34,12 @@ jQuery(document).ready(function ($) {
     $('.mobile-navigation').removeClass('active');
   });
 
+
+  $('.subpageSlides').flexslider({
+      animation: "fade",
+      smoothHeight: true
+    });
+
   /* Move Submenu Dropdown  to #dropdown-container */
   // $('#primary-menu > li.menu-item-has-children ul.sub-menu').each(function(){
   //   var menuId = $(this).parents('li').attr('id');

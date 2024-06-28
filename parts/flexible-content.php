@@ -35,7 +35,7 @@ $placeholder = THEMEURI . 'images/rectangle.png';
             }
     		?>
     		<section class="section-title" id="section-<?php echo $sani; ?>" data-section="<?php echo $dataTitle; ?>">
-    			<h2><?php echo $sTitle; ?></h2>
+    			<h2 class="stitle"><?php echo $sTitle; ?></h2>
                 <?php if( $sDesc ){ echo '<p class="sdesc">'.$sDesc.'</p>';} ?>
                 <?php if( $sLink ){ 
                     // echo '<pre>';
@@ -117,7 +117,7 @@ $placeholder = THEMEURI . 'images/rectangle.png';
                             </div>
                         <?php } ?>
                     </div>
-    				<div class="info wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+    				<div class="info " data-wow-duration="2s" data-wow-delay="0.5s">
     					<h2><?php echo $title; ?></h2>
             			<div class="desc"><?php echo $description; ?></div>
             			<div class="btn-wrapper">
@@ -178,7 +178,7 @@ $placeholder = THEMEURI . 'images/rectangle.png';
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="info wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                    <div class="info " data-wow-duration="2s" data-wow-delay="0.5s">
                         <h2><?php echo $title_w; ?></h2>
                         <div class="desc"><?php echo $description_w; ?></div>
                         <div class="btn-wrapper">

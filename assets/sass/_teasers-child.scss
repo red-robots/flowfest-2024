@@ -54,6 +54,7 @@ section.teasers {
 		}
 		.stitle {
 			font-size: 30px;
+			font-family: $letter-magic;
 		}
 	}
 	section.alt-cards {
@@ -104,6 +105,7 @@ section.teasers {
 			h2 {
 				font-size: 30px;
 				font-family: $letter-magic;
+				line-height: 1.2;
 			}
 		}
 	}
@@ -139,7 +141,7 @@ section.teasers {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				padding: 60px;
+				padding: 40px;
 			}
 			h2 {
 				text-transform: uppercase;
@@ -270,7 +272,7 @@ section.teasers {
 	background: $gray;
 	padding-bottom: 60px;
 	.event-date {
-		font-family: $font_secondary;
+		font-family: $font-brandon-regular;
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 1.2;
@@ -303,7 +305,7 @@ section.teasers {
 				float: left;
 				background: $gray_dark;
 				color: #FFF;
-				font-family: $font_secondary;
+				font-family: $font-brandon-regular;
 				font-weight: 400;
 				font-size: 15px;
 				line-height: 35px;
@@ -321,7 +323,7 @@ section.teasers {
 			height: 35px;
 			line-height: 35px;
 			float: left;
-			font-family: $font_secondary;
+			font-family: $font-brandon-regular;
 			font-weight: 400;
 			font-size: 15px;
 			letter-spacing: 1px;
@@ -336,7 +338,7 @@ section.teasers {
 			.day {
 				width: 100%;
 				text-align: center;
-				font-family: $font_secondary;
+				font-family: $font-brandon-regular;
 				font-weight: 400;
 				font-size: 20px;
 				line-height: 1.2;
@@ -552,11 +554,12 @@ section.teasers {
 			}
 			.time {
 				color: #000;
-				font-family: $font-secondary;
+				font-family: $font-brandon-regular;
 				font-size: 16px;
 				font-weight: 500;
 				width: 100%;
 				letter-spacing: 2px;
+				color: $color-brown;
 				@include tab {
 					display: flex;
 					justify-content: flex-end;
@@ -710,7 +713,7 @@ section.teasers {
 	.option-name {
 		display: block;
 		width: 100%;
-		font-family: $font_secondary;
+		font-family: $font-brandon-regular;
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 1.3;
@@ -874,12 +877,12 @@ section.teasers {
 		width: 100%;
 		padding: 6px;
 		text-align: center;
-		border: 1px solid $color-brown;
+		// border: 1px solid $color-brown;
 		@include tab {
 			width: 33.33%;
 		}
 		.label {
-			font-family: $font-secondary;
+			font-family: $font-brandon-regular;
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 1.2;
@@ -899,7 +902,7 @@ section.teasers {
 	.wrap {
 		height: 100%;
 		padding: 30px 15px;
-		background: $gray;
+		background: $color-gold;
 	}
 	&.oneCol {
 		.info {
