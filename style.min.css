@@ -1504,12 +1504,12 @@ section.teasers .fullwidth-image .fullwidth-image__text h3{opacity:0}
 #tabSchedules .schedules-list{display:none;-webkit-animation-duration:1s;animation-duration:1s}
 #tabSchedules .schedules-list h3.day{display:none}
 #tabSchedules .schedules-list.active{display:block;-webkit-animation-name:fadeIn;animation-name:fadeIn}
-#tabSchedules .scheduleContent{width:100%;float:left}
+#tabSchedules .scheduleContent{width:100%;margin:0 auto;max-width:900px}
 #tabSchedules #tabOptions{width:100%;float:left;text-align:center}
 #tabSchedules #tabOptions ul{max-width:800px;width:100%;margin:0 auto;padding:0;list-style:none}
 #tabSchedules #tabOptions ul li{display:inline-block;margin:10px 5px}
 #tabSchedules #tabOptions ul li a{display:inline-block;text-decoration:none;font-size:14px;line-height:1.2;text-transform:uppercase;color:#404040}
-#tabSchedules #tabOptions ul li.active a{border-bottom:2px solid #e8b450}
+#tabSchedules #tabOptions ul li.active a{border-bottom:2px solid #d56c22}
 .schedule.schedules-list{padding:30px}
 .schedule.schedules-list .t1{text-transform:uppercase;text-align:center;margin:0 0 20px;font-size:20px;letter-spacing:2px}
 .schedule.schedules-list li.item{padding:3px 0}
@@ -1517,8 +1517,8 @@ section.teasers .fullwidth-image .fullwidth-image__text h3{opacity:0}
 .schedule.schedules-list li.item .time{font-size:16px;text-transform:uppercase}
 #primary #section-schedule,#primary .section-schedule{background:#e9cba2;padding-top:50px;padding-bottom:30px}
 #primary .schedules-list{padding:20px 0;max-width:800px;width:100%;margin:0 auto}
-#primary .schedules-list ul.items{margin:0;padding:0;list-style:none}
-#primary .schedules-list li.item{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:relative;font-size:16px;text-align:center;padding:10px 0 40px}
+#primary .schedules-list ul.items{margin:15px 0 0 0;padding:30px;list-style:none;background-color:#e8b450}
+#primary .schedules-list li.item{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:relative;font-size:16px;text-align:center;padding:10px 0 40px;width:100%}
 #primary .schedules-list li.item:after{content:"";display:block;position:absolute;bottom:13px;height:1px;opacity:.4;background-image:url("data:image/svg+xml,%3csvg width='100%30' height='100%30' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%30' height='100%30' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='5%2c10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e")}
 #primary .schedules-list li.item.sametime:after{right:0;width:89%}
 #primary .schedules-list li.item.diff:after{left:0;width:100%}
@@ -2000,7 +2000,7 @@ section.teasers .fullwidth-image .fullwidth-image__text h3.mobile{display:none}
 #tabSchedules #tabOptions ul li{margin:0 0 0 18px}
 #primary #section-schedule,#primary .section-schedule{padding-top:80px;padding-bottom:70px}
 #primary .schedules-list li.item{padding:0}
-#primary .schedules-list li.item .time,#primary .schedules-list li.item .event{display:inline;padding:8px 8px;background:#e9cba2;text-align:right}
+#primary .schedules-list li.item .time,#primary .schedules-list li.item .event{display:inline;padding:8px 8px;text-align:right}
 #primary .schedules-list li.item .time{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;width:auto;padding-right:5px}
 #primary .schedules-list li.item .event{width:auto;max-width:unset;top:7px;line-height:1.2;padding-left:7px}
 #primary .schedules-list li.item .dates{margin-top:40px}

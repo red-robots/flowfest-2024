@@ -429,7 +429,10 @@ section.teasers {
 	}
 	.scheduleContent {
 		width: 100%;
-		float: left;
+		// float: left;
+		margin: 0 auto;
+		max-width: 900px;
+		// background-color: $color-gold;
 	}
 	#tabOptions {
 		width: 100%;
@@ -459,7 +462,7 @@ section.teasers {
 					color: $color_text_main;
 				}
 				&.active a {
-					border-bottom: 2px solid $red;
+					border-bottom: 2px solid $color-orange;
 				}
 			}
 			
@@ -506,12 +509,13 @@ section.teasers {
 	.schedules-list {
 		padding: 20px 0;
 		max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
+	    width: 100%;
+	    margin: 0 auto;
 		ul.items {
-			margin: 0 0;
-			padding: 0 0;
+			margin: 15px 0 0 0;
+			padding: 30px;
 			list-style: none;
+			background-color: $color-gold;
 		}
 		li.item {
 			@include flexgroup();
@@ -520,6 +524,7 @@ section.teasers {
 			font-size: 16px;
 			text-align: center;
 			padding: 10px 0 40px;
+			width: 100%;
 			@include tab {
 				padding: 0 0;
 			}
@@ -548,7 +553,7 @@ section.teasers {
 				@include tab {
 					display: inline;
 					padding: 8px 8px;
-					background: $gray;
+					// background: $gray;
 					text-align: right;
 				}
 			}
