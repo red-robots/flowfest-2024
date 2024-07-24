@@ -1567,7 +1567,7 @@ section.teasers .fullwidth-image .fullwidth-image__text h3{opacity:0}
 .btn-sm.white{color:#FFF;border-color:#FFF}
 .btn-sm span{position:relative;z-index:5}
 .btn-sm:before{content:"";display:block;width:150%;height:100%;background:#e8b450;-webkit-transform:translateX(-100%) skew(-45deg);transform:translateX(-100%) skew(-45deg);position:absolute;top:0;left:-20%;-webkit-transition:all ease .5s;transition:all ease .5s}
-.btn-sm:hover{color:#FFF;border-color:#fff;text-decoration:none !important}
+.btn-sm:hover{text-decoration:none !important}
 .btn-sm:hover:before{-webkit-transform:translateX(0) skew(-45deg);transform:translateX(0) skew(-45deg)}
 .btn-sm.white:hover{color:#FFF;border-color:#e8b450}
 .btn-sm.white:hover:before{border-color:#e8b450}

@@ -312,6 +312,15 @@ $placeholder = THEMEURI . 'images/rectangle.png';
                 // echo '<?pre>';
         ?>
             <section id="section-schedule" data-section="SCHEDULE" class="section-content">
+                <div class="btn-wrapper" style="text-align: center;">
+                    <?php foreach( $sLink as $nLink ){ ?>
+                        <div class="button">
+                            <a href="<?php bloginfo('url'); ?>/2024-flow-fest-registration/" target="_blank" class="btn-sm">
+                                <span>REGISTER</span>
+                            </a>
+                        </div>
+                    <?php } ?>
+                </div>
                 <div class="wrapper">
                     <div class="shead-icon text-center">
                         <div class="icon"><span class="ci-menu"></span></div>

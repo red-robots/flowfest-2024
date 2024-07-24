@@ -836,8 +836,8 @@ section.teasers {
 		transition: all ease .5s;
 	}
 	&:hover {
-		color: #FFF;
-		border-color: #fff;
+		// color: #FFF;
+		// border-color: #fff;
 		text-decoration: none!important;
 		&:before {
 			transform: translateX(0) skew(-45deg);
