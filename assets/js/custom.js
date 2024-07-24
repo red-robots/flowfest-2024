@@ -36,6 +36,26 @@ jQuery(document).ready(function ($) {
     animation: "fade",
     smoothHeight: true
   });
+  $('.loop').owlCarousel({
+    center: true,
+    items: 2,
+    nav: true,
+    loop: true,
+    margin: 15,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: true,
+    // stagePadding: 20,
+    responsive: {
+      600: {
+        items: 2
+      },
+      400: {
+        items: 1
+      }
+    }
+  });
 
   /* Move Submenu Dropdown  to #dropdown-container */
   // $('#primary-menu > li.menu-item-has-children ul.sub-menu').each(function(){

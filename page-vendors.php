@@ -14,6 +14,8 @@
 
 get_header(); 
 
+$placeholder = THEMEURI . 'images/rectangle.png';
+
 $CS = get_field('coming_soon'); 
 $vendors = get_field('vendors'); 
 // echo '<pre>';
@@ -39,7 +41,24 @@ $vendors = get_field('vendors');
 							<?php the_content(); ?>
 						</div><!-- .entry-content -->
 						<?php if( $vendors ) { ?>
-							<section class="vendors">
+
+							<div id="carousel-images" class="camp-caro swap">
+								<div class="loop owl-carousel owl-theme">
+								<?php foreach( $vendors as $v ) { 
+									$link = get_field('link', $v['ID']);
+									?>
+									<div class="item">
+										<div class="image" style="background-image:url('<?php echo $v['url']?>')">
+											<a href="<?php echo $v['url']?>" data-fancybox class="popup-image">
+											<img src="<?php echo $placeholder ?>" alt="" aria-hidden="true" />
+											</a>
+										</div>
+									</div>
+								<?php } ?>
+								</div>
+							</div>
+
+							<!-- <section class="vendors">
 								<?php foreach( $vendors as $v ) { 
 									$link = get_field('link', $v['ID']);
 									// echo '<pre>';
@@ -53,7 +72,7 @@ $vendors = get_field('vendors');
 									</a>
 									</div>
 								<?php } ?>
-							</section>
+							</section> -->
 						<?php } ?>
 					<?php } ?>
 

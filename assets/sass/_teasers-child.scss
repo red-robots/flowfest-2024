@@ -133,7 +133,7 @@ section.teasers {
 		.info {
 			padding: 60px 20px;
 			font-size: 20px;
-			line-height: 1.7;
+			line-height: 1.4;
 			input.button {
 				margin-top: 0;
 			}
@@ -755,7 +755,7 @@ section.teasers {
 		}
 	}
 	.option-text {
-		font-size: 14px;
+		font-size: 20px;
 		padding-top: 10px;
 		display: none;
 		@include animateThis(1s);
@@ -767,7 +767,7 @@ section.teasers {
 			height: 100.5%;
 		}
 		.option-name, .option-text {
-			color: #FFF;
+			// color: #FFF;
 			span.arrow {
 				transform: rotate(180deg);
 				&:before, &:after {
