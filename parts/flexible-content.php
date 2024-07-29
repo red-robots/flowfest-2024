@@ -315,7 +315,7 @@ $placeholder = THEMEURI . 'images/rectangle.png';
                 <div class="btn-wrapper" style="text-align: center;">
                     
                         <div class="button">
-                            <a href="<?php bloginfo('url'); ?>/2024-flow-fest-registration/" target="_blank" class="btn-sm">
+                            <a href="https://center.whitewater.org/race-forms/2024-flow-fest-yoga-immersion/" target="_blank" class="btn-sm">
                                 <span>REGISTER</span>
                             </a>
                         </div>
