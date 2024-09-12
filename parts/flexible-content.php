@@ -39,12 +39,12 @@ $placeholder = THEMEURI . 'images/rectangle.png';
                 <?php if( $sDesc ){ echo '<p class="sdesc">'.$sDesc.'</p>';} ?>
                 <?php if( $sLink ){ 
                     // echo '<pre>';
-                    // print_r($sLink);
+                    // print_r($link_type);
                     // echo '</pre>';
 
                     ?>
                     <br>
-                    <?php if( $link_type == 'popup' ){ ?>
+                    <?php if( $link_type == 'popup' && trim($popup_button_text) !== '' ){ ?>
                         <div class="button">
                             <a href="#view-this-shit" class="btn-sm inline <?php echo $pop_unique; ?>">
                                 <span><?php echo $popup_button_text; ?></span>
@@ -53,11 +53,11 @@ $placeholder = THEMEURI . 'images/rectangle.png';
                     <?php } else { ?>
                         <div class="btn-wrapper">
                             <?php foreach( $sLink as $nLink ){ ?>
-                                <div class="button">
+                                <!-- <div class="button">
                                     <a href="<?php echo $nLink['cta_link']['url']; ?>" target="<?php echo $nLink['cta_link']['target']; ?>" class="btn-sm">
                                         <span><?php echo $nLink['cta_link']['title']; ?></span>
                                     </a>
-                                </div>
+                                </div> -->
                             <?php } ?>
                         </div>
                     <?php } ?>
