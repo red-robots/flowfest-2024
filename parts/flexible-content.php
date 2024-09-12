@@ -314,11 +314,11 @@ $placeholder = THEMEURI . 'images/rectangle.png';
             <section id="section-schedule" data-section="SCHEDULE" class="section-content">
                 <div class="btn-wrapper" style="text-align: center;">
                     
-                        <div class="button">
+                        <!-- <div class="button">
                             <a href="https://center.whitewater.org/race-forms/2024-flow-fest-yoga-immersion/" target="_blank" class="btn-sm">
                                 <span>REGISTER</span>
                             </a>
-                        </div>
+                        </div> -->
                     
                 </div>
                 <div class="wrapper">
